@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Dice.h
 //  Threelow
 //
 //  Created by Martin Zhang on 2016-06-29.
@@ -7,14 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Dice.h"
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
+@interface Dice : NSObject
 
-        
-        
-        
-    }
-    return 0;
-}
+@property NSInteger currentValue;
+
+
+@end
