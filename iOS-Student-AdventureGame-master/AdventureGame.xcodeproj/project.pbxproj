@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C4AD3A21D2448B6004B1069 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AD3A11D2448B6004B1069 /* main.m */; };
-		9C4AD3AA1D244B42004B1069 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AD3A91D244B42004B1069 /* Dice.m */; };
-		9C4AD3AD1D24881E004B1069 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AD3AC1D24881E004B1069 /* GameController.m */; };
+		8B8993111B6EAB3700D062A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8993101B6EAB3700D062A2 /* main.m */; };
+		8B8993191B6EAB4E00D062A2 /* PathSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8993181B6EAB4E00D062A2 /* PathSegment.m */; };
+		8B89931C1B6EB0DD00D062A2 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89931B1B6EB0DD00D062A2 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9C4AD39C1D2448B6004B1069 /* CopyFiles */ = {
+		8B89930B1B6EAB3700D062A2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C4AD39E1D2448B6004B1069 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C4AD3A11D2448B6004B1069 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C4AD3A81D244B42004B1069 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
-		9C4AD3A91D244B42004B1069 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
-		9C4AD3AB1D24881E004B1069 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
-		9C4AD3AC1D24881E004B1069 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		8B89930D1B6EAB3700D062A2 /* AdventureGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventureGame; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8993101B6EAB3700D062A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B8993171B6EAB4E00D062A2 /* PathSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathSegment.h; sourceTree = "<group>"; };
+		8B8993181B6EAB4E00D062A2 /* PathSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathSegment.m; sourceTree = "<group>"; };
+		8B89931A1B6EB0DD00D062A2 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		8B89931B1B6EB0DD00D062A2 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C4AD39B1D2448B6004B1069 /* Frameworks */ = {
+		8B89930A1B6EAB3700D062A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,104 +44,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C4AD3951D2448B6004B1069 = {
+		8B8993041B6EAB3700D062A2 = {
 			isa = PBXGroup;
 			children = (
-				9C4AD3A01D2448B6004B1069 /* Threelow */,
-				9C4AD39F1D2448B6004B1069 /* Products */,
+				8B89930F1B6EAB3700D062A2 /* AdventureGame */,
+				8B89930E1B6EAB3700D062A2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9C4AD39F1D2448B6004B1069 /* Products */ = {
+		8B89930E1B6EAB3700D062A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C4AD39E1D2448B6004B1069 /* Threelow */,
+				8B89930D1B6EAB3700D062A2 /* AdventureGame */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C4AD3A01D2448B6004B1069 /* Threelow */ = {
+		8B89930F1B6EAB3700D062A2 /* AdventureGame */ = {
 			isa = PBXGroup;
 			children = (
-				9C4AD3A11D2448B6004B1069 /* main.m */,
-				9C4AD3AB1D24881E004B1069 /* GameController.h */,
-				9C4AD3AC1D24881E004B1069 /* GameController.m */,
-				9C4AD3A81D244B42004B1069 /* Dice.h */,
-				9C4AD3A91D244B42004B1069 /* Dice.m */,
+				8B8993101B6EAB3700D062A2 /* main.m */,
+				8B8993171B6EAB4E00D062A2 /* PathSegment.h */,
+				8B8993181B6EAB4E00D062A2 /* PathSegment.m */,
+				8B89931A1B6EB0DD00D062A2 /* GameController.h */,
+				8B89931B1B6EB0DD00D062A2 /* GameController.m */,
 			);
-			path = Threelow;
+			path = AdventureGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C4AD39D1D2448B6004B1069 /* Threelow */ = {
+		8B89930C1B6EAB3700D062A2 /* AdventureGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C4AD3A51D2448B6004B1069 /* Build configuration list for PBXNativeTarget "Threelow" */;
+			buildConfigurationList = 8B8993141B6EAB3700D062A2 /* Build configuration list for PBXNativeTarget "AdventureGame" */;
 			buildPhases = (
-				9C4AD39A1D2448B6004B1069 /* Sources */,
-				9C4AD39B1D2448B6004B1069 /* Frameworks */,
-				9C4AD39C1D2448B6004B1069 /* CopyFiles */,
+				8B8993091B6EAB3700D062A2 /* Sources */,
+				8B89930A1B6EAB3700D062A2 /* Frameworks */,
+				8B89930B1B6EAB3700D062A2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Threelow;
-			productName = Threelow;
-			productReference = 9C4AD39E1D2448B6004B1069 /* Threelow */;
+			name = AdventureGame;
+			productName = AdventureGame;
+			productReference = 8B89930D1B6EAB3700D062A2 /* AdventureGame */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9C4AD3961D2448B6004B1069 /* Project object */ = {
+		8B8993051B6EAB3700D062A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Martin Zhang";
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Cory Alder";
 				TargetAttributes = {
-					9C4AD39D1D2448B6004B1069 = {
-						CreatedOnToolsVersion = 7.3;
+					8B89930C1B6EAB3700D062A2 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = 9C4AD3991D2448B6004B1069 /* Build configuration list for PBXProject "Threelow" */;
+			buildConfigurationList = 8B8993081B6EAB3700D062A2 /* Build configuration list for PBXProject "AdventureGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 9C4AD3951D2448B6004B1069;
-			productRefGroup = 9C4AD39F1D2448B6004B1069 /* Products */;
+			mainGroup = 8B8993041B6EAB3700D062A2;
+			productRefGroup = 8B89930E1B6EAB3700D062A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C4AD39D1D2448B6004B1069 /* Threelow */,
+				8B89930C1B6EAB3700D062A2 /* AdventureGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C4AD39A1D2448B6004B1069 /* Sources */ = {
+		8B8993091B6EAB3700D062A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C4AD3AD1D24881E004B1069 /* GameController.m in Sources */,
-				9C4AD3AA1D244B42004B1069 /* Dice.m in Sources */,
-				9C4AD3A21D2448B6004B1069 /* main.m in Sources */,
+				8B89931C1B6EB0DD00D062A2 /* GameController.m in Sources */,
+				8B8993191B6EAB4E00D062A2 /* PathSegment.m in Sources */,
+				8B8993111B6EAB3700D062A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9C4AD3A31D2448B6004B1069 /* Debug */ = {
+		8B8993121B6EAB3700D062A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -155,11 +154,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -168,24 +165,24 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		9C4AD3A41D2448B6004B1069 /* Release */ = {
+		8B8993131B6EAB3700D062A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -199,7 +196,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -212,20 +208,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		9C4AD3A61D2448B6004B1069 /* Debug */ = {
+		8B8993151B6EAB3700D062A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		9C4AD3A71D2448B6004B1069 /* Release */ = {
+		8B8993161B6EAB3700D062A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -235,24 +231,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C4AD3991D2448B6004B1069 /* Build configuration list for PBXProject "Threelow" */ = {
+		8B8993081B6EAB3700D062A2 /* Build configuration list for PBXProject "AdventureGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C4AD3A31D2448B6004B1069 /* Debug */,
-				9C4AD3A41D2448B6004B1069 /* Release */,
+				8B8993121B6EAB3700D062A2 /* Debug */,
+				8B8993131B6EAB3700D062A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C4AD3A51D2448B6004B1069 /* Build configuration list for PBXNativeTarget "Threelow" */ = {
+		8B8993141B6EAB3700D062A2 /* Build configuration list for PBXNativeTarget "AdventureGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C4AD3A61D2448B6004B1069 /* Debug */,
-				9C4AD3A71D2448B6004B1069 /* Release */,
+				8B8993151B6EAB3700D062A2 /* Debug */,
+				8B8993161B6EAB3700D062A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9C4AD3961D2448B6004B1069 /* Project object */;
+	rootObject = 8B8993051B6EAB3700D062A2 /* Project object */;
 }

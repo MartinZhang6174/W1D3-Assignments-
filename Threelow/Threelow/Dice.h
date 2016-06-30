@@ -12,5 +12,8 @@
 
 @property NSInteger currentValue;
 
+- (instancetype)initWithRandomValue;
+
+- (void)roll;
 
 @end
