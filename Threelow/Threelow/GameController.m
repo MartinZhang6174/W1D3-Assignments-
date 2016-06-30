@@ -30,7 +30,10 @@
 
 - (void)rollDice {
     for (Dice * aDie in self.diceArray) {
-        [aDie roll];
+        if (![self.heldDices containsObject: aDie])
+        {
+            [aDie roll];
+        }
         NSLog(@"%ld", (long)aDie.currentValue);
     }
 }
@@ -38,11 +41,11 @@
 // Initwith methods are init methods that are onlu used once when declaring
 // PROBLEM: WHEN YOU ARE HOLDING AN ITEM IN THE ARRAY, IT HOLDS THE ITEM(BY INDEX THOOUGH) IN THE INITIAL ARRAY CREATED BY THE FIRST INITIATION AT THE BEGINNING OF THE PROGRAM. I NEED TO CHANGE THAT BY DOING...
 
-- (void)holdDice:(NSString *)diceBeingHeld
+- (void)holdDice:(NSString *)holdingDice
 {
-    NSInteger index = diceBeingHeld.integerValue;
+    NSInteger index = holdingDice.integerValue - 1;
 
-    if (index >= 0 && index < self.diceArray.count - 1) {
+    if (index >= 0 && index < self.diceArray.count) {
         
         Dice * aDie = self.diceArray[index];
         

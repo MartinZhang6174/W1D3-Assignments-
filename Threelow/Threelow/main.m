@@ -55,14 +55,15 @@ int main(int argc, const char * argv[]) {
                 
                 char diceBeingHeld[10];
                 
-                NSString *diceNumberInputAfterTrim = [[NSString stringWithUTF8String:diceBeingHeld] stringByTrimmingCharactersInSet:
-                                                  [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                
                 
                 NSLog(@"Tell me which one you want to hold.");
                 
                 fgets(diceBeingHeld, 10, stdin);
-                
-                [gameStarts holdDice: diceNumberInputAfterTrim];
+                NSString *diceNumberInputAfterTrim = [NSString stringWithUTF8String:diceBeingHeld];
+                NSString * trimmedString = [diceNumberInputAfterTrim stringByTrimmingCharactersInSet:
+                                            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                [gameStarts holdDice: trimmedString];
             }
 
         }
