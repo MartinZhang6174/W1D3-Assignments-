@@ -38,7 +38,8 @@
     }
 }
 
-// Initwith methods are init methods that are onlu used once when declaring
+
+// Initwith methods are init methods that are only used once when declaring
 // PROBLEM: WHEN YOU ARE HOLDING AN ITEM IN THE ARRAY, IT HOLDS THE ITEM(BY INDEX THOOUGH) IN THE INITIAL ARRAY CREATED BY THE FIRST INITIATION AT THE BEGINNING OF THE PROGRAM. I NEED TO CHANGE THAT BY DOING...
 
 - (void)holdDice:(NSString *)holdingDice
@@ -54,16 +55,20 @@
         NSLog(@"The dice you chose to hold was %ld", (long)aDie.currentValue);
     }
     
+        }
 
+- (void)unholdDice:(NSString *)unholdingDice
+{
+    NSInteger index = unholdingDice.integerValue - 1;
     
-//    
-//    if([diceBeingHeld isEqualToString:@"1"] {
-//        
-//        [self.diceArray]
-//
-//        [self.heldDices = //append value in held NSMutableSet diceBeingHeld]
-//    
-//    }
+    if (index >= 0 && index < self.diceArray.count) {
+        
+        Dice * aDie = self.diceArray[index];
+        
+        [self.heldDices removeObject:aDie];
+        
+        NSLog(@"The dice you chose to hold was %ld", (long)aDie.currentValue);
+    }
 }
 
 @end

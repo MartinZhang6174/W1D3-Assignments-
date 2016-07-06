@@ -10,12 +10,16 @@
 
 @interface GameController : NSObject
 
+- (void)rollDice;
+- (void)holdDice:(NSString *)diceBeingHeld;
+- (void)unholdDice:(NSString *)diceBeingUnheld;
+
 @property (nonatomic, strong) NSArray *diceArray;
 
 @property (nonatomic, strong) NSMutableSet *heldDices;
 
-- (void)rollDice;
-- (void)holdDice:(NSString *)diceBeingHeld;
+
+
 
 
 @end

@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
         GameController *gameStarts = [[GameController alloc]init];
         
         while (YES) {
-            NSLog(@"What do you want to do?\nRoll -- Roll dices :-0\nQuit -- Quit program :-(\nHold -- hold a dice ;-0");
+            NSLog(@"What do you want to do?\nRoll -- Roll dices :-0\nQuit -- Quit program :-(\nHold -- hold a dice ;-0\nUnhold -- unhold a dice :-)\n");
 
             NSString *rollText1 = @"roll";
             NSString *rollText2 = @"Roll";
@@ -24,6 +24,8 @@ int main(int argc, const char * argv[]) {
             NSString *quitText2 = @"Quit";
             NSString *holdText1 = @"hold";
             NSString *holdText2 = @"Hold";
+            NSString *unholdText1 = @"unhold";
+            NSString *unholdText2 = @"Unhold";
             
             char rollCommand[10];
             fgets(rollCommand, 10, stdin);
@@ -35,36 +37,43 @@ int main(int argc, const char * argv[]) {
                 [rollCommandAfterTrim rangeOfString:rollText2].location != NSNotFound) {
                 [gameStarts rollDice];
 
-//                if (k = 0; k < 5; k ++) {
-//                    
-//                    NSLog(<#NSString * _Nonnull format, ...#>);
-//                    
-//                }
                 
             }
             else if ([rollCommandAfterTrim rangeOfString:quitText1].location != NSNotFound ||
-                    [rollCommandAfterTrim rangeOfString:quitText2].location != NSNotFound)
+                     [rollCommandAfterTrim rangeOfString:quitText2].location != NSNotFound)
             {
             
                 break;
             
             }
+            else if([rollCommandAfterTrim rangeOfString:unholdText1].location != NSNotFound ||
+                    [rollCommandAfterTrim rangeOfString:unholdText2].location != NSNotFound) {
+                
+                char diceBeingUnheld[10];
+                
+                NSLog(@"Tell me which one you want to unhold.");
+                
+                fgets(diceBeingUnheld, 10, stdin);
+                NSString *unholdDiceNumberInputAfterTrim = [NSString stringWithUTF8String:diceBeingUnheld];
+                NSString *trimmedUnheldString = [unholdDiceNumberInputAfterTrim stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+                [gameStarts unholdDice:trimmedUnheldString];
+            }
             else if([rollCommandAfterTrim rangeOfString:holdText1].location != NSNotFound ||
-               [rollCommandAfterTrim rangeOfString:holdText2].location != NSNotFound) {
+                    [rollCommandAfterTrim rangeOfString:holdText2].location != NSNotFound) {
                 // ask user for index
                 
                 char diceBeingHeld[10];
                 
                 
-                
                 NSLog(@"Tell me which one you want to hold.");
                 
                 fgets(diceBeingHeld, 10, stdin);
-                NSString *diceNumberInputAfterTrim = [NSString stringWithUTF8String:diceBeingHeld];
-                NSString * trimmedString = [diceNumberInputAfterTrim stringByTrimmingCharactersInSet:
+                NSString *holdDiceNumberInputAfterTrim = [NSString stringWithUTF8String:diceBeingHeld];
+                NSString *trimmedHeldString = [holdDiceNumberInputAfterTrim stringByTrimmingCharactersInSet:
                                             [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                [gameStarts holdDice: trimmedString];
+                [gameStarts holdDice: trimmedHeldString];
             }
+            
 
         }
         
