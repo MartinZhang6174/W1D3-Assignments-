@@ -11,8 +11,23 @@
 @implementation Footman
 
 -(instancetype)init{
-    _healthPoints = 60;
+    self.healthPoints = 60;
+    self.attackPower = 10;
     return self;
 }
+
+//- (BOOL)isKindOfClass:(Unit*)aUnit {
+//    return YES;
+//}
+
+- (void)damage:(int)damage {
+    self.healthPoints = self.healthPoints - damage;
+}
+
+- (void)attack:(Unit *)enemy withDamage:(int)damage {
+    enemy.healthPoints = enemy.healthPoints - damage;
+}
+
+
 
 @end
